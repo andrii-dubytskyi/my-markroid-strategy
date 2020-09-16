@@ -1,0 +1,6 @@
+#set ($message = "Hello World")
+{
+  "offering": $offering,
+  "valueProposition": $value_proposition,
+  "message": $message
+}
