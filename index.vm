@@ -1,6 +1,6 @@
 #set ($message = "Hello World")
 {
-  "offering": $offering,
-  "valueProposition": $value_proposition,
+  "offering": $input.offering,
+  "valueProposition": $input.value_proposition,
   "message": $message
 }
