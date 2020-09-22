@@ -1,31 +1,12 @@
 name: Keyword Research
 description: This workload allows to research keywords based on the inputs
 
-input:
-  - offering
-  - value_proposition
-  - benefits
-  - features
-  - competitive_advantages
-
 resources:
-  - name: RelevantKeywordsService
-    description: Keyword research service
-    type: http_service
-    settings:
-      endpoint: https://keywords.markroid.com/api/relevancy
-      method: get
-      auth: 
-        endpoint: Change Me
-        token: Change Me
-        clientId: Change Me
-        clientSecret: Change Me
-
-  - name: MarketTrendsDictionary
-    description: Contains market-related trends information
+  - name: MessagesData
+    description: Messages storage
     type: json
     settings:
-      path: "resources/market-trends.json"
+      path: "resources/messages.json"
 
 environment:
   keywords_auth_endpoint: https://keywords.markroid.com/auth
