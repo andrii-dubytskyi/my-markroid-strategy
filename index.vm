@@ -1,5 +1,6 @@
 #set ($message = "Hello World")
 #set ($organization = $context.getOrganization())
+$subscription.notifyInProgress({"log": "Organization Data Retrieved"})
 {
   "accountId": "$input.accountId",
   "organization": "$organization.name"
