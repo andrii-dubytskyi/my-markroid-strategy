@@ -1,6 +1,9 @@
 #set ($message = "Hello World")
+#set ($organization = $context.getOrganization())
 {
-  "offering": $input.offering,
-  "valueProposition": $input.value_proposition,
-  "message": $message
+  "accountId": "$input.accountId",
+  "organization": "$organization.name"
+  "offering": "$input.offering",
+  "valueProposition": "$input.value_proposition",
+  "message": "$message"
 }
