@@ -15,5 +15,4 @@ environment:
   keywords_auth_client_secret: kjnfjkskjfhiweur22394
 
 worker:
-  driver: Velocity
-  entry_point: index.vm
+  entry_point: index.js
